@@ -1,0 +1,95 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center> <img src="assets/imgs/f-1.png" class="pad" ></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-grid>
+  <ion-row class="gccb">
+    <ion-col col-5 col-sm>
+    Jatin  
+    </ion-col>
+	<ion-col col-2 col-sm class="uggg">
+	
+	</ion-col>
+    <ion-col col-5 col-sm text-right>
+     7710507770
+    </ion-col>
+  </ion-row>
+  <br>
+  <br>
+    <ion-row class="ghghhgh">
+    
+	<ion-col class="uggg" text-center>
+	<h4 class="vsfdf" text-center>Recharge</h4>
+	</ion-col>
+  </ion-row>
+  <br>
+  <br>
+ 
+   <ion-row class="uggg11">
+   
+	<ion-col >
+	
+	  <ion-input type="text"  #otp1 class="otp"  maxlength="1" size="1" (keyup)="next(otp2)">
+        </ion-input>
+      
+        <ion-input type="text"  #otp2 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp3)">
+        </ion-input>
+      
+        <ion-input type="text"  #otp3 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp4)">
+        </ion-input>
+      
+        <ion-input type="text"  #otp4 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp5)">
+        </ion-input>
+         <ion-input type="text" #otp5 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp6)">
+        </ion-input>
+        <ion-input type="text"  #otp6 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp7)">
+        </ion-input>
+		<ion-input type="text"  #otp7 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp8)">
+        </ion-input>
+		<ion-input type="text"  #otp8 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp9)">
+        </ion-input>
+		<ion-input type="text"  #otp9 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp10)" >
+        </ion-input>
+	    <ion-input type="text"  #otp10 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" >
+        </ion-input>
+		<h5 text-center>Vehicle No.</h5>
+	</ion-col>
+  </ion-row><br>
+ 
+      <ion-row class="ghghhgh">
+    
+	<ion-col class="uggg" text-center>
+	<h4 class="vsfdf" text-center>Recharge Amount</h4>
+	</ion-col>
+  </ion-row>
+  <br>
+  <ion-row class="uggg11">
+   
+	<ion-col>
+	
+	  <ion-input type="number" class="hghgh6">
+        </ion-input>
+      
+       
+		<h5 text-center>Enter Amount</h5>
+	</ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+     <ion-grid>
+  <ion-row >
+    
+    <ion-col class="footb" (click)="brf()">
+Continue
+    </ion-col>
+
+  </ion-row>
+  </ion-grid>
+  </ion-toolbar>
+</ion-footer>

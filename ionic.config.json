@@ -1,0 +1,8 @@
+{
+  "name": "loadlink",
+  "app_id": "cbc606ae",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

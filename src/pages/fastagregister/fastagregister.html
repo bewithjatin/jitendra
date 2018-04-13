@@ -1,0 +1,104 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center> <img src="assets/imgs/f-1.png" class="pad" ></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+  <ion-row>
+    
+    <ion-col>
+	<ion-item>
+     <ion-label floating class="lab" [(ngModel)]="vehtype" >Select Vehicle Type</ion-label>
+     <ion-select interface="action-sheet">
+			<ion-option value="Car/Jeep/Van">Car/Jeep/Van</ion-option>
+			<ion-option value="LCV">LCV</ion-option>
+			<ion-option value="Truck 3 XL">Truck 3 XL</ion-option>
+			<ion-option value="Truck 4XL 5XL 6XL">Truck 4XL 5XL 6XL</ion-option>
+		</ion-select>
+</ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+    
+
+	
+	 <ion-item>
+  
+        <ion-input type="text" placeholder="V" #otp1 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" [(ngModel)]="o1" (keyup)="next(otp2)">
+        </ion-input>
+      
+        <ion-input type="text" placeholder="E" #otp2 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" [(ngModel)]="o2"  (keyup)="next(otp3)">
+        </ion-input>
+      
+        <ion-input type="text" placeholder="H" #otp3 class="otp" pattern="[0-9]{6}" maxlength="1" size="1"  [(ngModel)]="o3" (keyup)="next(otp4)">
+        </ion-input>
+      
+        <ion-input type="text" placeholder="I" #otp4 class="otp" pattern="[0-9]{6}" maxlength="1" size="1"  [(ngModel)]="o4" (keyup)="next(otp5)">
+        </ion-input>
+         <ion-input type="text" placeholder="C" #otp5 class="otp" pattern="[0-9]{6}" maxlength="1" size="1"  [(ngModel)]="o5" (keyup)="next(otp6)">
+        </ion-input>
+        <ion-input type="text" placeholder="L" #otp6 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" [(ngModel)]="o6" (keyup)="next(otp7)">
+        </ion-input>
+		<ion-input type="text" placeholder="E" #otp7 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" [(ngModel)]="o7" (keyup)="next(otp8)">
+        </ion-input>
+		<ion-input type="text" placeholder="." #otp8 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" [(ngModel)]="o8" (keyup)="next(otp9)">
+        </ion-input>
+		<ion-input type="text" placeholder="N" #otp9 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" [(ngModel)]="o9" (keyup)="next(otp10)" >
+        </ion-input>
+	    <ion-input type="text" placeholder="O" #otp10 class="otp" pattern="[0-9]{6}" maxlength="1" [(ngModel)]="o10" size="1"  >
+        </ion-input>
+   </ion-item>
+    </ion-col>
+    
+    
+  </ion-row>
+  <ion-row>
+    <ion-col>
+     <ion-item>
+     <ion-label floating class="lab" >Address</ion-label>
+     <ion-input class="text" [(ngModel)]="add"></ion-input>
+</ion-item>
+    </ion-col>
+    
+    
+  </ion-row>
+  <ion-row>
+    <ion-col>
+     <ion-item>
+     <ion-label floating class="lab" >Driving License no</ion-label>
+     <ion-input class="text" [(ngModel)]="dl"></ion-input>
+</ion-item>
+    </ion-col>
+    
+    
+  </ion-row>
+   <ion-row>
+    <ion-col>
+     <ion-item>
+     <ion-label floating class="lab">Date Of Birth</ion-label>
+	   <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+
+    </ion-item>
+    </ion-col>
+    
+    
+  </ion-row>
+</ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+     <ion-grid>
+  <ion-row >
+    
+    <ion-col class="footb" (click)="navsdhfcfdbbfbf()">
+Submit
+    </ion-col>
+
+  </ion-row>
+  </ion-grid>
+  </ion-toolbar>
+</ion-footer>
